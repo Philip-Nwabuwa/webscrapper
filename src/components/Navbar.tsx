@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Heart, Search, User } from "lucide-react";
+import { Heart, Search, SearchCheck, User } from "lucide-react";
 const Navbar = () => {
   const navIcons = [
     { src: <Search />, alt: "search" },
@@ -11,12 +11,7 @@ const Navbar = () => {
     <header className="w-full">
       <nav className="nav">
         <Link href="/" className="flex items-center gap-1">
-          <Image
-            src="/assets/icons/logo.svg"
-            width={27}
-            height={27}
-            alt="logo"
-          />
+        <SearchCheck />
           <p className="nav-logo">
             Scan<span className="text-primary">Master</span>
           </p>
